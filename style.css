@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+    overflow-y: hidden;
+}
+
+.textoDigitado {
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 300px;
+}
+
+.textoDigitado ::placeholder {
+    font-size: 32px;
+    color: #0A3871;
+}
+
+.textoDigitado label {
+    display: none;
+}
+
+.textoDigitado textarea {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    width: 50%;
+    height: 100%;
+    font-size: 32px;
+    overflow: hidden;
+}
+
+.textoDigitado textarea:focus {
+    outline: none;
+    border: none;
+    color: #0A3871;
+}
+
+.textoAparicao {
+    position: relative;
+    top: 20px;
+    width: 400px;
+    height: 750px;
+    left: 500px;
+    position: absolute;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__aviso {
+    text-align: center;
+}
+
+.avisoLetramaiuscula {
+    opacity: 0.8; 
+    color: #495057;
+}
+
+.caixaInterna__texto {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #495057;
+    border-radius: 32px;
+    top: 2%;
+    
+}
+
+.textoAparicao__texto{
+    top: 50%;
+}
+
+.textoAparicao__texto p{
+    font-weight: bold;
+    font-size: 25px;
+    color: #0A3871;
+}
+
+.caixa__aparecer {
+    font-size: 30px; /* Ajuste o tamanho do texto conforme necessário */
+    border: none;
+    background-color: #F8F9FA; /* Adicione uma cor de fundo para destacar o texto */
+    resize: none;
+    width: 100%; /* Ocupar toda a largura disponível */
+    height: 100%;
+    padding: 15px; /* Adicione um espaçamento interno */
+    margin-top: 10px; /* Adicione um espaçamento superior conforme necessário */
+    border-radius: 16px; /* Adicione bordas arredondadas conforme desejado */
+}
+
+.container__botoes {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+    bottom: 24px;
+    left: 240px;
+    position: absolute;
+}
+.container__botoes button{
+    margin-right: 16px;
+}
+
+.container__botoes__click1 {
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    border-radius: 24px;
+    gap: 8px;
+    background-color: #0A3871;
+    color: #ffffff; 
+}
+
+.container__botoes__click2 {
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid #0A3871; 
+    gap: 8px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+.botao__copiar {
+    width: 336px;
+    height: 67px;
+    position: absolute; 
+    bottom: 24px;
+    left: 1032px;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    gap: 8px;
+    background-color: #0A3871;
+    color: #ffffff;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 640px;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+}
+
+.letraA{
+    width: 100vw;
+    padding: 1rem;
+}
+.imagemLupa{
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    z-index: 100;
+    
+}
+.exclamacao{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 85%;
+    left: 15%
+}

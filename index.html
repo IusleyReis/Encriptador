@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <main>
+        <div class="letraA">
+            <img src="frame.6.png.png" alt="">
+        </div>
+        <div class="exclamacao">            
+            <img src="bi_exclamation-circle-fill.png.png" alt="exclamacao">
+            <p class="avisoLetramaiuscula">Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div id="divImagemlupa">
+            <img id="imagemLupa" class="imagemLupa" src="High-quality-products.png.png" alt="imagemLupa">
+        </div>        
+        <section class="textoDigitado">
+            <label for="textoDigitado"></label>
+            <textarea class="caixa__digitar" name="textoDigitado" id="textoDigitado" cols="50" rows="250" placeholder="Digite seu texto"></textarea>
+        </section>
+        <section class="textoAparicao">
+            <label for="textoAparicao"></label>
+            <textarea class="caixa__aparecer textoAparicao" name="textoAparicao" id="textoAparicao" cols="50" rows="48" readonly></textarea>
+            <div class="textoAparicao__texto">
+               <strong><p>Digite o texto que você deseja criptografar ou descriptografar no espaço abaixo. </p></strong> 
+            </div>
+        </section>
+        <div class="container__botoes">
+            <button class="container__botoes__click1" onclick="criptografar()">Criptografar</button>
+            <button class="container__botoes__click2" onclick="descriptografar()">Descriptografar</button>
+       </div>  
+       <div class="container__copiar">
+        <button class="botao__copiar" onclick="copiar()">Copiar</button>
+    </div>
+    <div class="container__copiar">
+        <button class="botao__copiar" onclick="copiarTexto()">Copiar</button>
+    </div>
+    </main> 
+
+    <footer id="rodapé">Criado por: Iusley Guimarães @2024</footer>
+
+</body>
+</html>
